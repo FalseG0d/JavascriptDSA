@@ -6,10 +6,12 @@ import tech.getarrays.employeeManager.exception.EmployeeNotFoundException;
 import tech.getarrays.employeeManager.model.Employee;
 import tech.getarrays.employeeManager.repo.EmployeeRepo;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.UUID;
 
 @Service
+@Transactional
 public class EmployeeService {
     private final EmployeeRepo employeeRepo;
 
@@ -23,7 +25,7 @@ public class EmployeeService {
         return employeeRepo.save(employee);
     }
 
-    public List<Employee> findAllEmployee(Employee employee){
+    public List<Employee> findAllEmployees(){
         return employeeRepo.findAll();
     }
 
