@@ -18,9 +18,11 @@ function setVar() {
     for(let ch of row1) {
         map.set(ch, 1);
     }
+
     for(let ch of row2) {
         map.set(ch, 2);
     }
+    
     for(let ch of row3) {
         map.set(ch, 3);
     }
