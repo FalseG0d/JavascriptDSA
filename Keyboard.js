@@ -39,7 +39,6 @@ var findWords = function(words) {
         let check3 = 0;
 
         for(let ch of word) {
-            // console.log(map.get(ch));
             if(map.get(ch) == 1) check1++;
             else if(map.get(ch) == 2) check2++;
             else if(map.get(ch) == 3) check3++;
