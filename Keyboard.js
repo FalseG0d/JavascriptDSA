@@ -44,8 +44,6 @@ var findWords = function(words) {
             else if(map.get(ch) == 3) check3++;
         }
 
-        // console.log(check1 + " " + check2 + " " + check3);
-
         if((check1 == 0 && check2 == 0) || (check2 == 0 && check3 == 0) || (check1 == 0 && check3 == 0)) res.push(word);
     }
 
